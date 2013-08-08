@@ -10,8 +10,8 @@ url = Addressable::URI.new(
 ).to_s
 
 post_body = {
-    'user[name]' => 'Elmo',
-    'user[email]' => 'redandfurry@monsters.com'
+    'user[password]' => 'crickets',
+    'user[id]' => '4'
   }
 
 p RestClient.put(url, post_body)

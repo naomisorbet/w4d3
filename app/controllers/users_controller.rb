@@ -41,7 +41,6 @@ class UsersController < ApplicationController
   end
   #
   def destroy
-    p params
     user = User.find(params[:id])
     if user.nil?
       render :text => "No such user. . . "

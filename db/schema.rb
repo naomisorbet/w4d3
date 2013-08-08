@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130807211036) do
+ActiveRecord::Schema.define(:version => 20130808005900) do
 
   create_table "contacts", :force => true do |t|
     t.integer  "user_id",    :null => false
@@ -40,6 +40,8 @@ ActiveRecord::Schema.define(:version => 20130807211036) do
     t.string   "email",      :null => false
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.string   "password",   :null => false
+    t.string   "token"
   end
 
 end
